@@ -1,0 +1,189 @@
+html {
+  background: url('../images/library.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  font-weight: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 80px;
+  padding-bottom: 40px;
+  color: rgb(196, 178, 142);
+  font-family: "Libre Baskerville";
+}
+
+h1 {
+  margin: 20px;
+  padding: 5px;
+  font-size: 70px;
+  color: rgb(196, 171, 131);
+}
+
+.container {
+  margin-top: 10px;
+}
+
+.searchRow {
+  margin-bottom: 15px;
+}
+
+input[type='radio'].icon-radio {
+  display: none;
+}
+
+input[type='radio'].icon-radio + label .unchecked {
+  display: inline;
+}
+
+input[type='radio'].icon-radio + label .checked {
+  display: none;
+}
+
+input[type='radio']:checked.icon-radio {
+  display: none;
+}
+
+input[type='radio']:checked.icon-radio + label .unchecked {
+  display: none;
+}
+
+input[type='radio']:checked.icon-radio + label .checked {
+  display: inline;
+}
+
+input[type=text] {
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+input[type="text"]:focus {
+  border-color: rgba(140, 122, 4, 1);
+  box-shadow: 0 1px 1px rgb(75, 66, 2) inset, 0 0 8px #ffe8c4;
+  outline: 0;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  border-top: black;
+}
+
+.form-control {
+  border: #140700;
+  color: rgb(196, 178, 142);
+  border-radius: 3px;
+}
+
+.search-placeholder::-webkit-input-placeholder {
+  color: rgb(85, 79, 74);
+  font-size: 13px;
+  word-spacing: 1px;
+}
+
+.search-placeholder:-moz-placeholder {
+  color: rgb(85, 79, 74);
+  font-size: 13px;
+}
+
+.search-placeholder::-moz-placeholder {
+  color: rgb(85, 79, 74);
+  font-size: 13px;
+}
+
+.search-placeholder:-ms-input-placeholder {
+  color: rgb(85, 79, 74);
+  font-size: 13px;
+}
+
+.btn.btn-default {
+  border-radius: 2px;
+  border: 0;
+  color: rgb(196, 178, 142);
+  text-shadow: none;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn.btn-default:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(196, 178, 142, 0.5);
+}
+
+.table {
+  font-weight: 100;
+  font-size: 13px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  margin-bottom: 0;
+}
+
+th:nth-child(2) {
+  width: 115px;
+}
+
+th:nth-child(3) {
+  width: 136px;
+}
+
+th:nth-child(4) {
+  width: 116px;
+}
+
+.table > thead > tr > th {
+  text-align: center;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px black;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: rgb(111, 103, 97);
+}
+
+span {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+a, a:hover {
+  text-decoration: none !important;
+  color: rgb(196, 178, 142);
+}
+
+.pages {
+  align-items: center;
+  margin-top: 15px;
+}
+
+.pagination > li > a {
+  color: rgb(196, 178, 142);
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px black;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > li > a:focus,
+.pagination > li > a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(196, 178, 142, 0.6);
+}
+
+.back-btn {
+  margin-top: 10px;
+}
+
+.active {
+  color: rgb(255, 255, 255);
+}
