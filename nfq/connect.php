@@ -34,16 +34,17 @@ function getBooks($sortBy, $orderBy, $search, $page)
   $page_size = 5;
   $search = "%" . $search . "%";
   $offset = ($page - 1) * $page_size;
+  $sortOrder = $sortBy . " " . $orderBy;
 
   $conn = getConnection();
 
   $prepared = $conn->prepare("
       SELECT id, title, author, published, genre FROM bookcase 
       WHERE title LIKE ? OR author LIKE ? OR published LIKE ? or genre LIKE ?
-      ORDER BY " . $sortBy . " " . $orderBy . " LIMIT " . $page_size . " OFFSET " . $offset
+      ORDER BY ? LIMIT ? OFFSET ?"
   );
 
-  $prepared->bind_param("ssss", $search, $search, $search, $search);
+  $prepared->bind_param("sssssii", $search, $search, $search, $search, $sortOrder, $page_size, $offset);
   $prepared->execute();
   $result = $prepared->get_result();
 
